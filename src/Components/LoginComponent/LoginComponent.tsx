@@ -20,7 +20,7 @@ export default function Login() {
     return (
         <div>
             <h1>Adult Login</h1>
-            <input type='text' placeholder='Enter Email' onChange={({target: { value }}) => setUsername(value)}/>
+            <input type='text' placeholder='Enter Username' onChange={({target: { value }}) => setUsername(value)}/>
             <input type='password' placeholder='Enter Password' onChange={({target: { value }}) => setPassword(value)}/>
             <button onClick={handleSubmit}>Login</button>
         </div>
