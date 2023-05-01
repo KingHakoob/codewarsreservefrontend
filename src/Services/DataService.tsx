@@ -6,6 +6,12 @@ async function GetCodeWarsUserData(username: string) {
     return data;
 }
 
+async function GetCodeWarsCompleted(username: string) {
+    const result = await fetch(`https://www.codewars.com/api/v1/users/${username}/code-challenges/completed`);
+    let data = await result.json();
+    return data;
+}
+
 // Backend API Fetches
 
-export { GetCodeWarsUserData }
+export { GetCodeWarsUserData, GetCodeWarsCompleted }
