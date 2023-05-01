@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { LoginPost } from '../../Services/DataService';
 
-export default function Login() {
+export default function LoginComponent() {
     const [username, setUsername] = useState<string>('');
     const [password, setPassword] = useState<string>('');
 
@@ -10,11 +11,11 @@ export default function Login() {
             password
         }
         console.log(userData);
-        //let token = await {function name}(userData);
-        // if(token.token != null){
-        //     localStorage.setItem("Token", token.token);
-        //     console.log('Success');
-        // }
+        let token = await LoginPost(userData);
+        if(token.token != null){
+            localStorage.setItem("Token", token.token);
+            console.log('Success');
+        }
     }
 
     return (

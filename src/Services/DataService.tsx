@@ -14,4 +14,40 @@ async function GetCodeWarsCompleted(username: string) {
 
 // Backend API Fetches
 
-export { GetCodeWarsUserData, GetCodeWarsCompleted }
+async function CreateAccountPost(createdUser: object) {
+    const result = await fetch('https://codewarsbackend.azurewebsites.net/User/AddUser', {
+        method: "POST",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify(createdUser)
+    });
+    if (!result.ok) {
+        const message = `An Error has Occured ${result.status}`;
+        throw new Error(message);
+    } else {
+    }
+    let data = await result.json();
+    console.log(data);
+    return data;
+}
+
+async function LoginPost(loginUser: object) {
+    const result = await fetch('https://codewarsbackend.azurewebsites.net/User/Login', {
+        method: "POST",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify(loginUser)
+    });
+    if (!result.ok) {
+        alert('Could Not Log In')
+        const message = `An Error has Occured ${result.status}`;
+        throw new Error(message);
+    }
+    let data = await result.json();
+    console.log(data);
+    return data;
+}
+
+export { GetCodeWarsUserData, GetCodeWarsCompleted, CreateAccountPost, LoginPost }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { CreateAccountPost } from '../../Services/DataService';
 
-export default function CreateAccount() {
+export default function CreateAccountComponent() {
     const [username, setUsername] = useState<string>('');
     const [isAdmin, setIsAdmin] = useState<boolean>(false);
     const [password, setPassword] = useState<string>('');
@@ -15,12 +16,12 @@ export default function CreateAccount() {
                 isAdmin,
                 password
             }
-            // if (await {function name}userData)) {
-            //   console.log('Success');
+            if (await CreateAccountPost(userData)) {
+              console.log('Success');
             //   navigate("/{home component}");
-            // } else {
-            //   alert("Count not create account");
-            // }
+            } else {
+              alert("Count not create account");
+            }
             console.log(userData);
         }
     }
