@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
-export default function AdultCreateAccount(){
+export default function CreateAccount(){
     const [username, setUsername] = useState<string>('');
+    const [isAdmin, setIsAdmin] = useState<boolean>(false);
     const [password, setPassword] = useState<string>('');
 
     const handleSubmit = async () => {
@@ -11,6 +12,7 @@ export default function AdultCreateAccount(){
             let userData: object = {
               id: 0,
               username,
+              isAdmin,
               password
             }
             // if (await {function name}userData)) {
@@ -19,13 +21,15 @@ export default function AdultCreateAccount(){
             // } else {
             //   alert("Count not create account");
             // }
+            console.log(userData);
         }
     }
 
     return (
         <div>
-            <h1>Create Adult Account</h1>
-            <input type='text' placeholder='Enter Email' onChange={({target: { value }}) => setUsername(value)}/>
+            <h1>Create Account</h1>
+            <input type='text' placeholder='Enter Username' onChange={({target: { value }}) => setUsername(value)}/>
+            <input type='checkbox' onClick={() => setIsAdmin(!isAdmin)}/>
             <input type='password' placeholder='Enter Password' onChange={({target: { value }}) => setPassword(value)}/>
             <button onClick={handleSubmit}>Login</button>
         </div>
