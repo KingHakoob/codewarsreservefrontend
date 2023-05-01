@@ -6,15 +6,19 @@ import CreateAccountComponent from './Components/CreateAccountComponent/CreateAc
 import Login from './Components/LoginComponent/LoginComponent';
 import TestGetCodeWarsUserData from './Components/TESTING CodewarsAPI/UserData';
 import TestGetCodeWarsUserCompleted from './Components/TESTING CodewarsAPI/UserCompleted';
+import TestGetCodeWarsUserAuthored from './Components/TESTING CodewarsAPI/UserAuthored';
+import TestGetCodeWarsKata from './Components/TESTING CodewarsAPI/GetKata';
 
 function App() {
   return (
     <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Login />} />
+          {/* <Route path='/' element={<Login />} /> */}
           {/* <Route path='/' element={<CreateAccountComponent />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserData />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserCompleted />} /> */}
+          {/* <Route path='/' element={<TestGetCodeWarsUserAuthored />} /> */}
+          <Route path='/' element={<TestGetCodeWarsKata />} />
         </Routes>
       </BrowserRouter>
   );

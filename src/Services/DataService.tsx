@@ -6,8 +6,20 @@ async function GetCodeWarsUserData(username: string) {
     return data;
 }
 
-async function GetCodeWarsCompleted(username: string) {
+async function GetCodeWarsCompletedKatas(username: string) {
     const result = await fetch(`https://www.codewars.com/api/v1/users/${username}/code-challenges/completed`);
+    let data = await result.json();
+    return data;
+}
+
+async function GetCodeWarsAuthoredKatas(username: string) {
+    const result = await fetch(`https://www.codewars.com/api/v1/users/${username}/code-challenges/authored`);
+    let data = await result.json();
+    return data;
+}
+
+async function GetCodeWarsKata(input: string) {
+    const result = await fetch(`https://www.codewars.com/api/v1/code-challenges/${input}`);
     let data = await result.json();
     return data;
 }
@@ -50,4 +62,4 @@ async function LoginPost(loginUser: object) {
     return data;
 }
 
-export { GetCodeWarsUserData, GetCodeWarsCompleted, CreateAccountPost, LoginPost }
+export { GetCodeWarsUserData, GetCodeWarsCompletedKatas, GetCodeWarsAuthoredKatas, GetCodeWarsKata, CreateAccountPost, LoginPost }
