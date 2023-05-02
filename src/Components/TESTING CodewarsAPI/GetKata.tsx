@@ -10,7 +10,7 @@ export default function TestGetCodeWarsKata() {
 
     return (
         <div>
-            <h1>Get Kata: Search By Id or S:ug</h1>
+            <h1>Get Kata: Search By Id or Slug</h1>
             <input type='text' placeholder='Search Here' onChange={({target: { value }}) => setInput(value)}/>
             <button onClick={handleSubmit}>Get Kata</button>
         </div>
