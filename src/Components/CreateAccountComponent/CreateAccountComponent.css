@@ -1,5 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 .createAccountBody{
     position: absolute;
     background-color: #222327;
     color: #efefef;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 800px;
+    height: 620px;
+    border-radius: 20px;
 }
+
+.createAccountCardHeaderText{
+    font-size: 64px;
+    margin-left: 25%;
+}
+
+.createAccountFormControl{
+    box-sizing: border-box;
+    position: absolute;
+    width: 656px;
+    height: 284px;
+    left: 90px;
+    top: 130px;
+    background: #222327;
+    border: 1px solid #757575;
+    border-radius: 20px;
+}
+
+.createAccountForm{
+    background-color: #222327;
+    width: 648px;
+    height: 89px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.createAccountForm2{
+    background-color: #222327;
+    width: 648px;
+    height: 89px;
+}
+
+.createAccountForm3{
+    background-color: #222327;
+    width: 648px;
+    height: 89px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.createAccountButton{
+    position: absolute;
+    width: 555px;
+    height: 83px;
+    background: #BB432C;
+    border-radius: 10px;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+margin-left: 15%;
+margin-top: 45%;
+color: #FFFFFF;
+}
+
+.createAccountCardSmTxt{
+    margin-left: 20%;
+    margin-top: 40%;
+}
+
+.createAccountCardSmTxt2{
+    margin-left: 30%;
+    margin-top: 15%;
+}
+

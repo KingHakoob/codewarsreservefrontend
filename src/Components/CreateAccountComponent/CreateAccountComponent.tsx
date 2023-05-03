@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CreateAccountPost } from '../../Services/DataService';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
+import Logo from '../../Assets/codewarsres-logo.png';
 import './CreateAccountComponent.css';
 
 export default function CreateAccountComponent() {
@@ -34,14 +35,28 @@ export default function CreateAccountComponent() {
         <Row>
     <Card style={{ width: '18rem' }}>
       <Card.Body className='createAccountBody'>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Img src='../../Assets/codewarsres-logo.png'></Card.Img>
+        <Card.Title className='createAccountCardHeaderText'>CodeReserve</Card.Title>
+
+        <Form className='createAccountFormControl'>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Control className='createAccountForm' type="text" placeholder="CodeWars Login" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Control className='createAccountForm2' type="password" placeholder="Password" />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Control className='createAccountForm3' type="password" placeholder="Confirm Password" />
+      </Form.Group>
+    </Form>
+
+    <Button className='createAccountButton' type="submit">
+        Sign Up
+      </Button>
+
+      <p className='createAccountCardSmTxt'> Admin Account </p>
+      <p className='createAccountCardSmTxt2'> Login if you already have an account </p>
       </Card.Body>
     </Card>
         </Row>
@@ -51,17 +66,3 @@ export default function CreateAccountComponent() {
    </div>
     )
 }
-
-
-
-
-// {/* <div>
-// <h1>Create Account</h1>
-// <input type='text' placeholder='Enter Username' onChange={({ target: { value } }) => setUsername(value)} />
-// <div className='d-flex'>
-//     <p>Admin Account</p>
-//     <input type='checkbox' onClick={() => setIsAdmin(!isAdmin)} />
-// </div>
-// <input type='password' placeholder='Enter Password' onChange={({ target: { value } }) => setPassword(value)} />
-// <button onClick={handleSubmit}>Login</button>
-// </div>  */}
