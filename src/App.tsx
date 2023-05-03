@@ -8,6 +8,7 @@ import TestGetCodeWarsUserData from './Components/TESTING CodewarsAPI/UserData';
 import TestGetCodeWarsUserCompleted from './Components/TESTING CodewarsAPI/UserCompleted';
 import TestGetCodeWarsUserAuthored from './Components/TESTING CodewarsAPI/UserAuthored';
 import TestGetCodeWarsKata from './Components/TESTING CodewarsAPI/GetKata';
+import UserHomeComponent from './Components/UserHomeComponent/UserHomeComponent';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           {/* <Route path='/' element={<TestGetCodeWarsUserData />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserCompleted />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserAuthored />} /> */}
-          <Route path='/' element={<TestGetCodeWarsKata />} />
+          {/* <Route path='/' element={<TestGetCodeWarsKata />} /> */}
+          <Route path='/' element={<UserHomeComponent />} />
         </Routes>
       </BrowserRouter>
   );
