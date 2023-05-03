@@ -14,11 +14,11 @@ function App() {
     <BrowserRouter>
         <Routes>
           {/* <Route path='/' element={<Login />} /> */}
-          {/* <Route path='/' element={<CreateAccountComponent />} /> */}
+          <Route path='/' element={<CreateAccountComponent />} />
           {/* <Route path='/' element={<TestGetCodeWarsUserData />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserCompleted />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserAuthored />} /> */}
-          <Route path='/' element={<TestGetCodeWarsKata />} />
+         {/*<Route path='/' element={<TestGetCodeWarsKata />} />*/}
         </Routes>
       </BrowserRouter>
   );
