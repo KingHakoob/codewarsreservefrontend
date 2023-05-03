@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import CreateAccountComponent from './Components/CreateAccountComponent/CreateAccountComponent';
 import Login from './Components/LoginComponent/LoginComponent';
 import TestGetCodeWarsUserData from './Components/TESTING CodewarsAPI/UserData';

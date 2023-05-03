@@ -1,4 +1,76 @@
-.log-out{
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.log-out {
     display: flex;
     justify-content: end;
+}
+
+.log-out-btn {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+
+.user-header-box {
+    background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+    /* position: absolute; */
+    width: 1180px;
+    height: 242px;
+    border-radius: 14px;
+    /* left: calc(50% - 1180px/2);
+    top: 123px;  */
+}
+
+.rectangle {
+    background-color: black;
+    width: 99px;
+    height: 11px;
+}
+
+.kata-rank {
+    color: rgba(33, 150, 243, 1);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.username {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header-title {
+    margin-top: 43px;
+    margin-left: 39px;
+}
+
+@media screen and (max-width: 991px) {
+    .user-header-box {
+        background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+
+        width: 383px;
+        height: 359px;
+
+    }
 }
