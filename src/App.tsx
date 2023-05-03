@@ -8,6 +8,7 @@ import TestGetCodeWarsUserData from './Components/TESTING CodewarsAPI/UserData';
 import TestGetCodeWarsUserCompleted from './Components/TESTING CodewarsAPI/UserCompleted';
 import TestGetCodeWarsUserAuthored from './Components/TESTING CodewarsAPI/UserAuthored';
 import TestGetCodeWarsKata from './Components/TESTING CodewarsAPI/GetKata';
+import UserHomeComponent from './Components/UserHomeComponent/UserHomeComponent';
 
 function App() {
   return (
