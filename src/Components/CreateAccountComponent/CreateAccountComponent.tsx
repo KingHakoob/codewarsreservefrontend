@@ -41,16 +41,26 @@ export default function CreateAccountComponent() {
         <Card.Title className='createAccountCardHeaderText'>CodeReserve</Card.Title>
 
         <Form className='createAccountFormControl'>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control className='createAccountForm' type="text" placeholder="       CodeWars Login" />
+          <Container> 
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <i className="fa-solid fa-user"></i>
+        <Form.Control className='createAccountForm' type="text" placeholder="        CodeWars Login" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Control className='createAccountForm2' type="password" placeholder="Password" />
-      </Form.Group>
+          </Container>
 
-      <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
-        <Form.Control className='createAccountForm3' type="password" placeholder="Confirm Password" />
+      <Container>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <i className="fa-solid fa-lock"></i>
+        <Form.Control className='createAccountForm2' type="password" placeholder="        Password" />
       </Form.Group>
+      </Container>
+
+      <Container>
+      <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
+      <i className="fa-solid fa-lock"></i>
+        <Form.Control className='createAccountForm3' type="password" placeholder="        Confirm Password" />
+      </Form.Group>
+      </Container>
     </Form>
 
     <Button className='createAccountButton' type="submit">
