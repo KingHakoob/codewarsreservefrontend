@@ -4,6 +4,7 @@ import '../UserHomeComponent/UserHomeComponent.css';
 import { Container, Row, Card, Col, Form, Navbar, Dropdown, DropdownButton } from 'react-bootstrap';
 import search from '../../Assets/Search.png';
 import logo from '../../Assets/codewarsres-logo.png';
+import copyright from '../../Assets/copyright.png'
 
 
 function UserHomeComponent() {
@@ -109,6 +110,14 @@ function UserHomeComponent() {
                 </Card>
 
             </Container>
+            <Navbar className='footer-box'>
+            <Container className='nav-container'>
+                <div>
+                <img src={copyright}/>
+                <p>2023 CodeStack Academy Day Class</p>
+                </div>
+            </Container>
+            </Navbar>
         </div>
     )
 }

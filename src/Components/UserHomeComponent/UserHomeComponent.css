@@ -205,6 +205,12 @@ margin-bottom: 0px;
     margin-top: 15px;
 }
 
+.footer-box{
+    background: linear-gradient(180deg, #222327 0%, rgba(34, 35, 39, 0.817708) 55.21%, rgba(34, 35, 39, 0) 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    height: 150px;
+}
+
 .user-info {
     display: flex;
     justify-content: space-evenly;
