@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import '../src/Components/LoginComponent/LoginComponent.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateAccountComponent from './Components/CreateAccountComponent/CreateAccountComponent';
 import Login from './Components/LoginComponent/LoginComponent';
@@ -18,7 +19,7 @@ function App() {
           {/* <Route path='/' element={<TestGetCodeWarsUserData />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserCompleted />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserAuthored />} /> */}
-          <Route path='/' element={<TestGetCodeWarsKata />} />
+          <Route path='/' element={<Login/>} />
         </Routes>
       </BrowserRouter>
   );
