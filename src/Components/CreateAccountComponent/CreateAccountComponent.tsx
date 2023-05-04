@@ -42,13 +42,13 @@ export default function CreateAccountComponent() {
 
         <Form className='createAccountFormControl'>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control className='createAccountForm' type="text" placeholder="CodeWars Login" />
+        <Form.Control className='createAccountForm' type="text" placeholder="       CodeWars Login" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Control className='createAccountForm2' type="password" placeholder="Password" />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
         <Form.Control className='createAccountForm3' type="password" placeholder="Confirm Password" />
       </Form.Group>
     </Form>
