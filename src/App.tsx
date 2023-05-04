@@ -24,9 +24,9 @@ function App() {
           {/* <Route path='/' element={<TestGetCodeWarsUserCompleted />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsUserAuthored />} /> */}
           {/* <Route path='/' element={<TestGetCodeWarsKata />} /> */}
-          {/* <Route path='/' element={<TestBoard />} /> */}
+          <Route path='/' element={<TestBoard />} />
           {/* <Route path='/TESTINGUserInfo' element={<TESTINGUserInfo />} /> */}
-          <Route path='/' element={<UserHomeComponent />} />
+          <Route path='/UserHomeComponent' element={<UserHomeComponent />} />
         </Routes>
       </BrowserRouter>
   );

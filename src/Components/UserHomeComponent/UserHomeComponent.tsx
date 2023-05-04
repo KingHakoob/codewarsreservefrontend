@@ -5,6 +5,7 @@ import { Container, Row, Card, Col, Form } from 'react-bootstrap';
 
 
 function UserHomeComponent() {
+    let userData = JSON.parse(sessionStorage.UserData);
     return (
         <div>
             <div className='log-out'>
@@ -18,41 +19,41 @@ function UserHomeComponent() {
                         <Row >
 
                             <div className='header-title col-2'>
-                                <p className='rectangle kata-rank'>4 Kyu</p>
+                                <p className='rectangle kata-rank'>{userData.ranks.overall.name}</p>
                             </div>
                             <div className='col-4'>
-                                <p className='username'>UserNameGoesHere </p>
+                                <p className='username'>{userData.username}</p>
                             </div>
                         </Row>
                         <Row className='user-info'>
                             <div className='col-4'>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Name: </p>
-                                    <p className='user-info-input'> Brandon Lee</p>
+                                    <p className='user-info-input'>{userData.name}</p>
                                 </div>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Honor: </p>
-                                    <p className='user-info-input'> 200</p>
+                                    <p className='user-info-input'>{userData.honor}</p>
                                 </div>
                             </div>
                             <div className='col-4'>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Clane: </p>
-                                    <p className='user-info-input'>Codestack Academy</p>
+                                    <p className='user-info-input'>{userData.clan}</p>
                                 </div>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Leaderboard Position:</p>
-                                    <p className='user-info-input'>#320,230</p>
+                                    <p className='user-info-input'>#{userData.leaderboardPosition}</p>
                                 </div>
                             </div>
                             <div className='col-4'>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Total Completed Kata: </p>
-                                    <p className='user-info-input'>80</p>
+                                    <p className='user-info-input'>{userData.codeChallenges.totalCompleted}</p>
                                 </div>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Total Authored Kata: </p>
-                                    <p className='user-info-input'>2</p>
+                                    <p className='user-info-input'>{userData.codeChallenges.totalAuthored}</p>
                                 </div>
                             </div>
                         </Row>

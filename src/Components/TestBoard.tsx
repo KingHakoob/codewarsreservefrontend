@@ -10,7 +10,7 @@ export default function TestBoard() {
     
     const handleSubmit = async () => {
         sessionStorage.setItem('UserData', JSON.stringify(await GetCodeWarsUserData(username)))
-        navigate("/TESTINGUserInfo");
+        navigate("/UserHomeComponent");
     }
 
     return (
