@@ -22,9 +22,9 @@
 .createAccountFormControl{
     box-sizing: border-box;
     position: absolute;
-    width: 656px;
+    width: 650px;
     height: 284px;
-    left: 22px;
+    left: 20px;
     top: 260px;
     background: #222327;
     border: 1px solid #757575;
@@ -35,6 +35,7 @@
     background-color: #222327;
     width: 648px;
     height: 89px;
+    margin-left: px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -89,6 +90,11 @@ color: #FFFFFF;
     background-color: #222327;
     color: #efefef;
     border: #222327;
+}
+
+form, input, label, p {
+    color: #757575 !important;
+    
 }
 
 i{
