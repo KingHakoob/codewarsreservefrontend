@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { CreateAccountPost } from '../../Services/DataService';
-import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
+import { Container, Row, Button, Card, Form } from 'react-bootstrap';
 import Logo from '../../Assets/codewarsres-logo.png';
+import Switch from "./Switch";
 import './CreateAccountComponent.css';
+import logInBtn from '../CreateAccountComponent/Switch';
 
 export default function CreateAccountComponent() {
     const [username, setUsername] = useState<string>('');
@@ -35,7 +37,7 @@ export default function CreateAccountComponent() {
         <Row>
     <Card style={{ width: '18rem' }}>
       <Card.Body className='createAccountBody'>
-        <Card.Img src='../../Assets/codewarsres-logo.png'></Card.Img>
+        <img src={Logo} className='createAccountLogo' alt='Code Wars Reserve Logo'/>
         <Card.Title className='createAccountCardHeaderText'>CodeReserve</Card.Title>
 
         <Form className='createAccountFormControl'>
@@ -55,8 +57,9 @@ export default function CreateAccountComponent() {
         Sign Up
       </Button>
 
+      <Switch />
       <p className='createAccountCardSmTxt'> Admin Account </p>
-      <p className='createAccountCardSmTxt2'> Login if you already have an account </p>
+      <p className='createAccountCardSmTxt2'> <span onClick={logInBtn}>Login</span> if you already have an account </p>
       </Card.Body>
     </Card>
         </Row>

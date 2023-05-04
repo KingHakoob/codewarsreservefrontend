@@ -6,10 +6,11 @@
     position: absolute;
     background-color: #222327;
     color: #efefef;
-    margin-left: 25%;
-    margin-top: 10%;
-    width: 800px;
-    height: 620px;
+    margin-left: 27%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    width: 700px;
+    height: 730px;
     border-radius: 20px;
 }
 
@@ -23,8 +24,8 @@
     position: absolute;
     width: 656px;
     height: 284px;
-    left: 90px;
-    top: 130px;
+    left: 22px;
+    top: 260px;
     background: #222327;
     border: 1px solid #757575;
     border-radius: 20px;
@@ -64,18 +65,75 @@ font-weight: 400;
 font-size: 40px;
 line-height: 48px;
 text-align: center;
-margin-left: 15%;
-margin-top: 45%;
+margin-left: 10%;
+margin-top: 51%;
 color: #FFFFFF;
 }
 
 .createAccountCardSmTxt{
     margin-left: 20%;
-    margin-top: 40%;
+    margin-top: 37%;
 }
 
 .createAccountCardSmTxt2{
     margin-left: 30%;
     margin-top: 15%;
 }
+
+.createAccountLogo{
+    margin-left: 33%;
+    margin-top: 5%;
+}
+
+.createAccountLoginBtn{
+    background-color: #222327;
+    color: #efefef;
+    border: #222327;
+}
+
+
+/* Switch Button CSS */
+
+.react-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .react-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    top: 290px;
+    left: 55px;
+    background: grey;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
+  }
+  
+  .react-switch-label .react-switch-button {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+  
+  .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+  }
+  
+  .react-switch-label:active .react-switch-button {
+    width: 60px;
+  }
 
