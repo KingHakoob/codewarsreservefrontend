@@ -5,6 +5,16 @@
     justify-content: end;
 }
 
+.nav-bg {
+    padding: 0;
+    background: linear-gradient(180deg, #222327 -15.32%, rgba(34, 35, 39, 0.817708) 39.89%, rgba(34, 35, 39, 0) 84.68%);
+}
+
+.nav-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .log-out-btn {
     color: white;
     display: flex;
@@ -12,6 +22,22 @@
     gap: 9px;
     font-family: 'Lato', sans-serif;
     font-size: 24px;
+}
+
+.logo-img {
+    width: 160px;
+    height: 65px;
+
+}
+
+.logo-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    justify-content: center;
+    display: flex;
 }
 
 .user-header-box {
@@ -61,6 +87,95 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: start;
+    width: 1180px;
+}
+
+.filter-input {
+    background: #222327;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.filter-input-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-input {
+    width: 351px;
+    height: 43px;
+    margin: 0;
+    padding-right: 30px;
+}
+
+.filter-image {
+    position: absolute;
+    bottom: 16px;
+    left: 331px;
+    width: 10px;
+    height: 10px;
+}
+
+.form-control:active {
+    background-color: #16171B;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #222327;
+    --bs-btn-border-color: #222327;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #222327;
+    --bs-btn-hover-border-color: #ffffff;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #222327;
+    --bs-btn-active-border-color: #ffffff;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #222327;
+    --bs-btn-disabled-border-color: #222327;
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+    width: 351px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-item {
+    color: white;
+    width: 351px;
+}
+
+.dropdown-menu {
+    --bs-dropdown-bg: #222327;
+    border-radius: 0px;
+}
+
+.sort-title{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+color: #EFEFEF;
+margin-top: 50px;
+margin-bottom: 0px;
+}
+
+.button {
+    background-color: #222327;
+    /* Blues/Gray2 */
+
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+
 }
 
 .rectangle {
