@@ -92,7 +92,7 @@
 .filters-container {
     display: flex;
     justify-content: start;
-    width: 1180px;
+    /* width: 1180px; */
 }
 
 .filter-input {
@@ -248,6 +248,10 @@ margin-bottom: 0px;
 .log-out{
     display: flex;
     justify-content: end;
+}
+
+.filterKataRow {
+    display: flex;
 }
 
 @media screen and (max-width: 991px) {
