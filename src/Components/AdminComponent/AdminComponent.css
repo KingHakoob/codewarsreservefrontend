@@ -67,10 +67,10 @@
 .categories-container {
     width: 1180px !important;
     margin-top: 20px !important;
-    
+
 }
 
-.filters {
+.filters-admin {
     width: 407px;
     height: 311px;
     background-color: transparent !important;
@@ -81,7 +81,7 @@
     padding-top: 19px;
 }
 
-.filters-title {
+.filters-title-admin {
     color: rgba(239, 239, 239, 1);
     font-family: 'Lato';
     font-style: normal;
@@ -90,32 +90,32 @@
     line-height: 38px;
 }
 
-.filters-container {
+.filters-container-admin {
     display: flex;
     justify-content: start;
     width: 1180px;
 }
 
-.filter-input {
+.filter-input-admin {
     background: #222327;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
 }
 
-.filter-input-container {
+.filter-input-container-admin {
     position: relative;
     padding: 0;
     margin: 0;
 }
 
-.filter-input {
+.filter-input-admin {
     width: 351px;
     height: 43px;
     margin: 0;
     padding-right: 30px;
 }
 
-.filter-image {
+.filter-image-admin {
     position: absolute;
     bottom: 16px;
     left: 331px;

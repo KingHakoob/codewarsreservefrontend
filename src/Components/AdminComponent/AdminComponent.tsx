@@ -22,7 +22,7 @@ function AdminComponent() {
         }
     }else {
         userData = JSON.parse(sessionStorage.UserData);
-        
+
     }
     console.log(userData);
     return (
@@ -100,15 +100,15 @@ function AdminComponent() {
                     </Col>
                 </Row>
             </Container>
-            <Container className='filters-container'>
-                <Card className='filters'>
-                    <p className='filters-title'> Filters</p>
-                    <Container className='filter-input-container'>
-                        <Form.Control className='filter-input'></Form.Control>
-                        <img className='filter-image' src={search} />
+            <Container className='filters-container-admin'>
+                <Card className='filters-admin'>
+                    <p className='filters-title-admin'> Filters</p>
+                    <Container className='filter-input-container-admin'>
+                        <Form.Control className='filter-input-admin'></Form.Control>
+                        <img className='filter-image-admin' src={search} />
                     </Container>
-                    <p className='sort-title'>Sort By</p>
-                    <DropdownButton className='dropdown-bg' id="dropdown-basic-button" title="Alphabetically">
+                    <p className='sort-title-admin'>Sort By</p>
+                    <DropdownButton className='dropdown-bg-admin' id="dropdown-basic-button" title="Alphabetically">
                         <Dropdown.Item href="#/action-1">A to Z</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Z to A</Dropdown.Item>
                     </DropdownButton>
