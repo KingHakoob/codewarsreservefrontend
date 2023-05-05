@@ -8,7 +8,21 @@ import copyright from '../../Assets/copyright.png'
 
 
 function UserHomeComponent() {
-    let userData = JSON.parse(sessionStorage.UserData);
+    let userData;
+    if(!sessionStorage.UserData){
+        userData = {
+            ranks: {overall: {name: '1 Kyu'}},
+            username: 'BobTheBuilder',
+            name: 'Bob',
+            honor: '5000',
+            clan: 'Builders',
+            leaderBoardPosition: '1',
+            codeWarsChallenges: {totalCompleted: 1000, totalAuthored: 50}
+        }
+    }else {
+        userData = JSON.parse(sessionStorage.UserData);
+    }
+    
     return (
         <div>
             <Navbar className='nav-bg'>
