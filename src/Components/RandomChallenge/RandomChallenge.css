@@ -1,9 +1,9 @@
 
 
 .outline1 {
-    position: absolute;
-    width: 1180px;
-    height: 242px;
+
+    width: 1280px;
+    height: 342px;
     left: 10%;
     margin-top: 4rem;
    
@@ -13,29 +13,25 @@
     border-radius: 14px;
   }
   .title{
-    width: 223px;
+   
 height: 54px;
 padding: 1rem;
-top: 482px;
+
 margin-left: 2rem;
 font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
+
+
 font-size: 20px;
 line-height: 24px;
 display: flex;
 align-items: center;
-text-align: center;
+
 
 color: #FFFFFF;
   }
 .randompageinput{
-    
 
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    isolation: isolate;
+   
     background: linear-gradient(180deg, #222327 0%, #16171B 100%);
     margin-left: 2rem;
     color: #FFFFFF;
@@ -48,10 +44,10 @@ color: #FFFFFF;
   .randompageinput2{
     
 
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    isolation: isolate;
+
+
+
+
     background: linear-gradient(180deg, #222327 0%, #16171B 100%);
     margin-left: 2rem;
     color: #FFFFFF;
@@ -61,28 +57,27 @@ color: #FFFFFF;
     height: 43px;
    
   }
-  .svgg{
 
-margin-left: 10rem;
-height: 20rem;
-  }
   .RandomlyChosenKata{
     font-family: 'Lato';
-    
 
-    font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
+ color: #FFFFFF;
     
   }
   .nn {
-    width: 20rem;
-    margin-top: 20;
-    margin-left: 20rem;
+    width: 40rem;
+margin-bottom: 20rem;
+    margin-left: 25rem;
+    color: #FFFFFF;
+
+  }
+  .nnn{
+    width: 10rem;
+  }
+  .Randomly1{
+    font-size: 2rem;
+  }
+  .Randomly1{
+    font-size: 1rem;
   }

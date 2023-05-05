@@ -12,7 +12,8 @@ export default function RandomChallenge() {
     <div className='outline1'>
     <div className='title'>RandomChallenge</div>
   
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div className='nnn'>
+
       <div>
         <Form.Select className='randompageinput'>
           <option>Choose a language</option>
@@ -31,9 +32,19 @@ export default function RandomChallenge() {
         </Form.Select>
       </div>
     </div>
-  
+    <div>
+    
 
-  </div>
+        <div className='nn'>
+          <div className='Randomly1'>
+          Randomly Chosen Kata
+        </div>
+        <div className='Randomly2'>AuthorOfThisKata</div>
+        <div className='RandomlyChosenKata1'>Kata Description</div>
+        <div className='RandomlyChosenKata1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.</div>
+    </div> 
+     </div>
+ </div>
   
 
 
