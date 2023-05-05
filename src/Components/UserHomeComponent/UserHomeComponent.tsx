@@ -110,14 +110,14 @@ function UserHomeComponent() {
                 </Card>
 
             </Container>
-            <Navbar className='footer-box'>
+            <Row className='footer-box'>
             <Container className='nav-container'>
-                <div>
+                <div className='cr-tag'>
                 <img src={copyright}/>
-                <p>2023 CodeStack Academy Day Class</p>
+                <p >2023 CodeStack Academy Day Class</p>
                 </div>
             </Container>
-            </Navbar>
+            </Row>
         </div>
     )
 }

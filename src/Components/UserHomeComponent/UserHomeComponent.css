@@ -206,9 +206,19 @@ margin-bottom: 0px;
 }
 
 .footer-box{
-    background: linear-gradient(180deg, #222327 0%, rgba(34, 35, 39, 0.817708) 55.21%, rgba(34, 35, 39, 0) 100%);
-    transform: matrix(1, 0, 0, -1, 0, 0);
+    background: linear-gradient(0deg, rgba(34,35,39,1) 0%, rgba(18,19,21,1) 47%, rgba(255,255,255,0) 100%);
     height: 150px;
+}
+
+.cr-tag{
+    display: flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 50px;
+    color: white;
 }
 
 .user-info {
