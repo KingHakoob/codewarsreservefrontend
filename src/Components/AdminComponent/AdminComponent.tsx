@@ -22,6 +22,7 @@ function AdminComponent() {
         }
     }else {
         userData = JSON.parse(sessionStorage.UserData);
+        
     }
     console.log(userData);
     return (
