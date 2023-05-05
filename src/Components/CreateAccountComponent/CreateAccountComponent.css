@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.createAccountBody{
+    position: absolute;
+    background-color: #222327;
+    color: #efefef;
+    margin-left: 27%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    width: 700px;
+    height: 738px;
+    border-radius: 20px;
+}
+
+.createAccountCardHeaderText{
+    font-size: 64px;
+    margin-left: 25%;
+}
+
+.createAccountFormControl{
+    position: absolute;
+    width: 535px;
+    height: 284px;
+    left: 80px;
+    top: 260px;
+    background: #222327;
+    border: 2px solid #757575;
+    border-radius: 20px;
+}
+
+.createAccountForm{
+    background-color: #222327;
+    width: 530px;
+    height: 85px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.createAccountForm2{
+    background-color: #222327;
+    width: 530px;
+    height: 92px;
+}
+
+.createAccountForm3{
+    background-color: #222327;
+    width: 530px;
+    height: 92px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+i{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: -5%;
+}
+
+.createAccountButton{
+    position: absolute;
+    width: 555px;
+    height: 83px;
+    background: #BB432C;
+    border-color: #ad4935;
+    border-radius: 10px;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+margin-left: 10%;
+color: #FFFFFF;
+}
+
+.createAccountCardSmTxt{
+    margin-left: 18%;
+    margin-top: 38%;
+}
+
+.createAccountCardSmTxt2{
+    margin-left: 27%;
+    margin-top: 17%;
+}
+
+.createAccountLogo{
+    margin-left: 33%;
+    margin-top: 5%;
+}
+
+.createAccountLoginBtn{
+    background-color: #222327;
+    color: #efefef;
+    border: #222327;
+}
+
+form, input, label, p {
+    color: #757575 !important;
+    
+}
+
+.container { 
+    position:relative;
+    padding:0;
+    margin:0;
+}
+
+Form.Group { 
+    height:20px;
+    margin:0;
+    padding-left:30px;
+}
+
+
+
+/* Switch Button CSS */
+
+.react-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .react-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    top: 290px;
+    left: 75px;
+    background: #757575;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
+  }
+  
+  .react-switch-label .react-switch-button {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+  
+  .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+    
+  }
+  
+  .react-switch-label:active .react-switch-button {
+    width: 40px;
+  }
+

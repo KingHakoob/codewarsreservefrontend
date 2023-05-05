@@ -124,6 +124,11 @@
     margin-left: 39px;
 }
 
+.log-out{
+    display: flex;
+    justify-content: end;
+}
+
 @media screen and (max-width: 991px) {
     .user-header-box {
         background: linear-gradient(180deg, #222327 0%, #16171B 100%);
