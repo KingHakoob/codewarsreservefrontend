@@ -29,7 +29,7 @@ export default function CreateAccountComponent() {
         if (await CreateAccountPost(userData)) {
           sessionStorage.setItem('UserData', JSON.stringify(await GetCodeWarsUserData(username)));
           sessionStorage.setItem('BackendUserData', JSON.stringify(await GetUserData(username)));
-          let backendUserData = JSON.parse(sessionStorage.UserData);
+          let backendUserData = JSON.parse(sessionStorage.BackendUserData);
           backendUserData.isAdmin ? navigate('/AdminComponent') : navigate('/UserHomeComponent');
         } else {
           alert("Count not create account");

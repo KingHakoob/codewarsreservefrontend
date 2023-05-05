@@ -21,7 +21,7 @@ export default function LoginComponent() {
             localStorage.setItem('Token', token.token);
             sessionStorage.setItem('UserData', JSON.stringify(await GetCodeWarsUserData(username)));
             sessionStorage.setItem('BackendUserData', JSON.stringify(await GetUserData(username)));
-            let backendUserData = JSON.parse(sessionStorage.UserData);
+            let backendUserData = JSON.parse(sessionStorage.BackendUserData);
             backendUserData.isAdmin ? navigate('/AdminComponent') : navigate('/UserHomeComponent');
         }
     };
