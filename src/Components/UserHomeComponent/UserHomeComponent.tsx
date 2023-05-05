@@ -40,7 +40,7 @@ function UserHomeComponent() {
                         <p className='logo-title'>CodeReserve</p>
                     </div>
                     <div className='log-out'>
-                        <p className='log-out-btn' onClick={() => Navigate('')}><img src={logout}/>Log Out</p>
+                        <p className='log-out-btn' onClick={() => Navigate('/')}><img src={logout}/>Log Out</p>
                     </div>
                 </Container>
             </Navbar>
