@@ -125,7 +125,7 @@ function UserHomeComponent() {
                                 <DropdownButton className='dropdown-bg' id="dropdown-basic-button" title="Choose a Language">
                                     <Dropdown.Item href="#/action-1">C#</Dropdown.Item>
                                     <Dropdown.Item href="#/action-2">JavaScript</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Phython</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Python</Dropdown.Item>
                                 </DropdownButton>
 
                                 <p className='sort-title'>Difficulty</p>
