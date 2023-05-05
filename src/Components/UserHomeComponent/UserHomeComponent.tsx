@@ -48,7 +48,7 @@ function UserHomeComponent() {
                         <Row >
 
                             <div className='header-title col-2'>
-                                {/* <p className='rectangle kata-rank'>{userData.ranks.overall.name}</p> */}
+                                <p className='rectangle kata-rank'>{userData.ranks.overall.name}</p>
                             </div>
                             <div className='col-4'>
                                 <p className='username'>{userData.username}</p>
