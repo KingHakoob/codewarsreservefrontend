@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap';
 import { LoginPost, GetCodeWarsUserData, GetUserData } from '../../Services/DataService';
 import img from '../../Assets/codewarsres-logo.png'
 import { useNavigate } from 'react-router-dom';
+import '../LoginComponent/LoginComponent.css'
+
 export default function LoginComponent() {
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
