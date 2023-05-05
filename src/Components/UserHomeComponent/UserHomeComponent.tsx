@@ -1,16 +1,28 @@
-import React from 'react'
+import React from 'react';
 import logout from '../../Assets/log-out.png';
-import '../UserHomeComponent/UserHomeComponent.css'
-import { Container, Row, Card, Col, Form } from 'react-bootstrap';
+import '../UserHomeComponent/UserHomeComponent.css';
+import { Container, Row, Card, Col, Form, Navbar, Dropdown, DropdownButton } from 'react-bootstrap';
+import search from '../../Assets/Search.png';
+import logo from '../../Assets/codewarsres-logo.png';
+import copyright from '../../Assets/copyright.png'
 
 
 function UserHomeComponent() {
     let userData = JSON.parse(sessionStorage.UserData);
     return (
         <div>
-            <div className='log-out'>
-                <p className='log-out-btn'><img src={logout} />Log Out</p>
-            </div>
+            <Navbar className='nav-bg'>
+                <Container className='nav-container'>
+                    <div>
+                        <img className='logo-img' src={logo} />
+                        <p className='logo-title'>CodeReserve</p>
+                    </div>
+                    <div className='log-out'>
+                        <p className='log-out-btn'><img src={logout} />Log Out</p>
+                    </div>
+                </Container>
+            </Navbar>
+
 
 
             <Container className='d-flex justify-content-center'>
@@ -72,13 +84,41 @@ function UserHomeComponent() {
                     </Col>
                 </Row>
             </Container>
-            <Container>
+            <Container className='filters-container'>
                 <Card className='filters'>
                     <p className='filters-title'> Filters</p>
-                    <Form.Control />
-                    <Card.Body>This is some text within a card body.</Card.Body>
+                    <Container className='filter-input-container'>
+                        <Form.Control className='filter-input'></Form.Control>
+                        <img className='filter-image' src={search} />
+                    </Container>
+                    <p className='sort-title'>Sort By</p>
+                    <DropdownButton className='dropdown-bg' id="dropdown-basic-button" title="Alphabetically">
+                        <Dropdown.Item href="#/action-1">A to Z</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Z to A</Dropdown.Item>
+                    </DropdownButton>
+
+                    <p className='sort-title'>Languages</p>
+                    <DropdownButton className='dropdown-bg' id="dropdown-basic-button" title="Choose a Language">
+                        <Dropdown.Item href="#/action-1">A to Z</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Z to A</Dropdown.Item>
+                    </DropdownButton>
+
+                    <p className='sort-title'>Difficulty</p>
+                    <DropdownButton className='dropdown-bg' id="dropdown-basic-button" title="Select">
+                        <Dropdown.Item href="#/action-1">A to Z</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Z to A</Dropdown.Item>
+                    </DropdownButton>
                 </Card>
+
             </Container>
+            <Navbar className='footer-box'>
+            <Container className='nav-container'>
+                <div>
+                <img src={copyright}/>
+                <p>2023 CodeStack Academy Day Class</p>
+                </div>
+            </Container>
+            </Navbar>
         </div>
     )
 }
