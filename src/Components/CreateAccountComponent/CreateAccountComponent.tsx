@@ -39,7 +39,7 @@ export default function CreateAccountComponent() {
 
   return (
     <div>
-      <Container>
+      <Container className="create-container">
         <Row>
           <Card style={{ width: "18rem" }}>
             <Card.Body className="createAccountBody">
