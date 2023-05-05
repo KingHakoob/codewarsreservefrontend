@@ -1,25 +1,28 @@
+const codeWars = 'https://www.codewars.com/api/v1/';
+const backendAPI = 'https://codewarsbackend.azurewebsites.net/';
+
 // Code Wars API Fetches
 
 async function GetCodeWarsUserData(username: string) {
-    const result = await fetch(`https://www.codewars.com/api/v1/users/${username}`);
+    const result = await fetch(`${codeWars}users/${username}`);
     let data = await result.json();
     return data;
 }
 
 async function GetCodeWarsCompletedKatas(username: string) {
-    const result = await fetch(`https://www.codewars.com/api/v1/users/${username}/code-challenges/completed`);
+    const result = await fetch(`${codeWars}users/${username}/code-challenges/completed`);
     let data = await result.json();
     return data;
 }
 
 async function GetCodeWarsAuthoredKatas(username: string) {
-    const result = await fetch(`https://www.codewars.com/api/v1/users/${username}/code-challenges/authored`);
+    const result = await fetch(`${codeWars}users/${username}/code-challenges/authored`);
     let data = await result.json();
     return data;
 }
 
 async function GetCodeWarsKata(input: string) {
-    const result = await fetch(`https://www.codewars.com/api/v1/code-challenges/${input}`);
+    const result = await fetch(`${codeWars}code-challenges/${input}`);
     let data = await result.json();
     return data;
 }
@@ -27,7 +30,7 @@ async function GetCodeWarsKata(input: string) {
 // Backend API Fetches
 
 async function CreateAccountPost(createdUser: object) {
-    const result = await fetch('https://codewarsbackend.azurewebsites.net/User/AddUser', {
+    const result = await fetch(`${backendAPI}User/AddUser`, {
         method: "POST",
         headers: {
             'Content-Type': "application/json"
@@ -45,7 +48,7 @@ async function CreateAccountPost(createdUser: object) {
 }
 
 async function LoginPost(loginUser: object) {
-    const result = await fetch('https://codewarsbackend.azurewebsites.net/User/Login', {
+    const result = await fetch(`${backendAPI}User/Login`, {
         method: "POST",
         headers: {
             'Content-Type': "application/json"
@@ -62,4 +65,22 @@ async function LoginPost(loginUser: object) {
     return data;
 }
 
-export { GetCodeWarsUserData, GetCodeWarsCompletedKatas, GetCodeWarsAuthoredKatas, GetCodeWarsKata, CreateAccountPost, LoginPost }
+async function AddReservation(addedReservation: object) {
+    const result = await fetch(`${backendAPI}Reservation/AddReservation`, {
+        method: "POST",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify(addedReservation)
+    });
+    if (!result.ok) {
+        alert('Could Not Add Reservation')
+        const message = `An Error has Occured ${result.status}`;
+        throw new Error(message);
+    }
+    let data = await result.json();
+    console.log(data);
+    return data;
+}
+
+export { GetCodeWarsUserData, GetCodeWarsCompletedKatas, GetCodeWarsAuthoredKatas, GetCodeWarsKata, CreateAccountPost, LoginPost, AddReservation }

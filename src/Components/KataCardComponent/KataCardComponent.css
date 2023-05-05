@@ -1,0 +1,68 @@
+.kataCardComponent {
+    background-color:#222327;
+    color: white;
+    max-width: 754px;
+    border-radius: 14px;
+}
+
+.topRow {
+    padding-top: 24px;
+    padding-left: 45px;
+}
+
+.kataRank {
+    font-size: 32px;
+    color: #F0DB4F;
+}
+
+.kataName {
+    font-size: 24px;
+}
+
+.kataAuthor {
+    font-size: 16px;
+}
+
+.reserveBtn {
+    font-size: 15px;
+    background-color: rgba(217, 217, 217, 0.05);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.bottomRow {
+    padding-left: 53px;
+    padding-bottom: 45px;
+}
+
+.descriptionTitle {
+    font-size: 24px;
+    font-size: bold;
+}
+
+.kataDescription {
+    font-size: 24px;
+    max-width: 640px;
+}
+
+.iconCol {
+    padding-right: 31px;
+}
+
+.iconGroup{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconSpacing {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.langIcon {
+    background-color: #16171B;
+    padding: 0.4rem;
+    border-radius: 5px;
+}

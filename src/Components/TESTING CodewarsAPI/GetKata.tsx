@@ -5,7 +5,7 @@ export default function TestGetCodeWarsKata() {
     const [input, setInput] = useState<string>('');
 
     const handleSubmit = async () => {
-        console.log(await GetCodeWarsKata(input));
+        console.log(await GetCodeWarsKata(input.replaceAll(' ', '-').toLocaleLowerCase()));
     }
 
     return (

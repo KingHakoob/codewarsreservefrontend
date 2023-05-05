@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.background{
+  background-color: black;
+  height: 100vh;
+}
+
+.background1{
+  background-color: black;
+}
+
+.bg2 {
+  position: absolute;
+  width: 90%;
+  max-width: 800px;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #222327;
+  border-radius: 20px;
+}
+
+.imgwidth{
+  width: 10rem;
+  height: 5rem;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.logoheader{
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form1{
+  border-radius: 2rem;
+  width: 350px;
+}
+
+.input1 {
+  width: 350px;
+  height: 63px;
+  background: #222327;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #757575;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 39px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.input2 {
+  width: 350px;
+  height: 63px;
+  background: #222327;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #757575;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 39px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.loginbtn {
+  position: absolute;
+  width: 350px;
+  height: 63px;
+  margin-top: 10rem;
+  background: #BB432C;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.icon{
+  background-image: url(../../Assets/codewarsres-logo.png);
+  width: 3rem;
+}
+
+.text1 {
+  margin-top: 10rem;
+  height: 29px;
+  left: 505px;
+  top: 1032px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.textbtn{
+  background: #222327;
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.input-container {
+  position: relative;
+}
+  .input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #ccc;
+  }
+ 
