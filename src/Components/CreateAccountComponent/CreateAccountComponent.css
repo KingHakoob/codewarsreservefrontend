@@ -10,7 +10,7 @@
     margin-top: 1%;
     margin-bottom: 5%;
     width: 700px;
-    height: 730px;
+    height: 738px;
     border-radius: 20px;
 }
 
@@ -20,38 +20,42 @@
 }
 
 .createAccountFormControl{
-    box-sizing: border-box;
     position: absolute;
-    width: 650px;
+    width: 535px;
     height: 284px;
-    left: 20px;
+    left: 80px;
     top: 260px;
     background: #222327;
-    border: 1px solid #757575;
+    border: 2px solid #757575;
     border-radius: 20px;
 }
 
 .createAccountForm{
     background-color: #222327;
-    width: 648px;
-    height: 89px;
-    margin-left: px;
+    width: 530px;
+    height: 85px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .createAccountForm2{
     background-color: #222327;
-    width: 648px;
-    height: 89px;
+    width: 530px;
+    height: 92px;
 }
 
 .createAccountForm3{
     background-color: #222327;
-    width: 648px;
-    height: 89px;
+    width: 530px;
+    height: 92px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+i{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: -5%;
 }
 
 .createAccountButton{
@@ -59,6 +63,7 @@
     width: 555px;
     height: 83px;
     background: #BB432C;
+    border-color: #ad4935;
     border-radius: 10px;
     font-family: 'Lato';
 font-style: normal;
@@ -67,7 +72,6 @@ font-size: 40px;
 line-height: 48px;
 text-align: center;
 margin-left: 10%;
-margin-top: 51%;
 color: #FFFFFF;
 }
 
@@ -77,8 +81,8 @@ color: #FFFFFF;
 }
 
 .createAccountCardSmTxt2{
-    margin-left: 30%;
-    margin-top: 15%;
+    margin-left: 27%;
+    margin-top: 17%;
 }
 
 .createAccountLogo{
@@ -95,15 +99,6 @@ color: #FFFFFF;
 form, input, label, p {
     color: #757575 !important;
     
-}
-
-i{
-    color: #757575;
-    position:absolute;
-    bottom:48px;
-    left:10px;
-    width:10px;
-    height:10px;
 }
 
 .container { 
@@ -137,7 +132,7 @@ Form.Group {
     height: 20px;
     top: 290px;
     left: 75px;
-    background: grey;
+    background: #757575;
     border-radius: 100px;
     position: relative;
     transition: background-color .2s;
@@ -159,6 +154,7 @@ Form.Group {
   .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
     left: calc(100% - 2px);
     transform: translateX(-100%);
+    
   }
   
   .react-switch-label:active .react-switch-button {
