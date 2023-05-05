@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container } from 'react-bootstrap';
-import { LoginPost, GetCodeWarsUserData } from '../../Services/DataService';
+import { LoginPost, GetCodeWarsUserData, GetUserData } from '../../Services/DataService';
 import img from '../../Assets/codewarsres-logo.png'
 import { useNavigate } from 'react-router-dom';
 export default function LoginComponent() {
@@ -18,7 +18,9 @@ export default function LoginComponent() {
         if (token?.token != null) {
             localStorage.setItem('Token', token.token);
             sessionStorage.setItem('UserData', JSON.stringify(await GetCodeWarsUserData(username)));
-            navigate('/UserHomeComponent');
+            sessionStorage.setItem('BackendUserData', JSON.stringify(await GetUserData(username)));
+            let backendUserData = JSON.parse(sessionStorage.UserData);
+            backendUserData.isAdmin ? navigate('/AdminComponent') : navigate('/UserHomeComponent');
         }
     };
 

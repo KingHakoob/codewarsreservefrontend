@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CreateAccountPost, GetCodeWarsUserData } from "../../Services/DataService";
+import { CreateAccountPost, GetCodeWarsUserData, GetUserData } from "../../Services/DataService";
 import { Container, Row, Button, Card, Form } from "react-bootstrap";
 import Logo from "../../Assets/codewarsres-logo.png";
 import "./CreateAccountComponent.css";
@@ -28,7 +28,9 @@ export default function CreateAccountComponent() {
         };
         if (await CreateAccountPost(userData)) {
           sessionStorage.setItem('UserData', JSON.stringify(await GetCodeWarsUserData(username)));
-            navigate('/UserHomeComponent');
+          sessionStorage.setItem('BackendUserData', JSON.stringify(await GetUserData(username)));
+          let backendUserData = JSON.parse(sessionStorage.UserData);
+          backendUserData.isAdmin ? navigate('/AdminComponent') : navigate('/UserHomeComponent');
         } else {
           alert("Count not create account");
         }
