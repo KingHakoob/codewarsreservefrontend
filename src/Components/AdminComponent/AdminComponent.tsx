@@ -5,9 +5,11 @@ import { Container, Row, Card, Col, Form, Navbar, Dropdown, DropdownButton } fro
 import search from '../../Assets/Search.png';
 import logo from '../../Assets/codewarsres-logo.png';
 import copyright from '../../Assets/copyright.png'
+import { useNavigate } from 'react-router-dom';
 
 
 function AdminComponent() {
+    let Navigate = useNavigate();
     let userData;
     let userTemp = JSON.parse(sessionStorage.UserData);
     if(userTemp.username == null){
@@ -34,7 +36,7 @@ function AdminComponent() {
                         <p className='logo-title'>CodeReserve</p>
                     </div>
                     <div className='log-out'>
-                        <p className='log-out-btn'><img src={logout} />Log Out</p>
+                        <p className='log-out-btn' onClick={() => Navigate('')}><img src={logout} />Log Out</p>
                     </div>
                 </Container>
             </Navbar>
