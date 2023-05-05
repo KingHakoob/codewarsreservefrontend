@@ -1,0 +1,88 @@
+
+
+.outline1 {
+    position: absolute;
+    width: 1180px;
+    height: 242px;
+    left: 10%;
+    margin-top: 4rem;
+   
+    background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+    border: 5px solid transparent; /* set a transparent border */
+    border-image: linear-gradient(180deg, #EB9514 0%, #1F87E7 100%) 1; /* set a border image with a linear-gradient */
+    border-radius: 14px;
+  }
+  .title{
+    width: 223px;
+height: 54px;
+padding: 1rem;
+top: 482px;
+margin-left: 2rem;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+  }
+.randompageinput{
+    
+
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+    margin-left: 2rem;
+    color: #FFFFFF;
+ font-size: 15px;
+ 
+    width: 276px;
+    height: 43px;
+   
+  }
+  .randompageinput2{
+    
+
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+    margin-left: 2rem;
+    color: #FFFFFF;
+ font-size: 15px;
+ 
+    width: 276px;
+    height: 43px;
+   
+  }
+  .svgg{
+
+margin-left: 10rem;
+height: 20rem;
+  }
+  .RandomlyChosenKata{
+    font-family: 'Lato';
+    
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    
+  }
+  .nn {
+    width: 20rem;
+    margin-top: 20;
+    margin-left: 20rem;
+  }
