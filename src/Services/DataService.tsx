@@ -83,4 +83,10 @@ async function AddReservation(addedReservation: object) {
     return data;
 }
 
-export { GetCodeWarsUserData, GetCodeWarsCompletedKatas, GetCodeWarsAuthoredKatas, GetCodeWarsKata, CreateAccountPost, LoginPost, AddReservation }
+async function GetUserData(username: string) {
+    const result = await fetch(`${backendAPI}User/getisadmin/${username}`);
+    let data = await result.json();
+    return data;
+}
+
+export { GetCodeWarsUserData, GetCodeWarsCompletedKatas, GetCodeWarsAuthoredKatas, GetCodeWarsKata, CreateAccountPost, LoginPost, AddReservation, GetUserData }
