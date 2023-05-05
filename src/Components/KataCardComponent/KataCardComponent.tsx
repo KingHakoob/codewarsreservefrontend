@@ -1,7 +1,19 @@
 import { Container, Row, Col } from "react-bootstrap";
 import './KataCardComponent.css';
+import React, { useState } from 'react';
+
 
 export default function KataCardComponent(props: any) {
+
+   
+        const [clicked, setClicked] = useState(false);
+      
+        const handleClick = () => {
+          setClicked(!clicked);
+        };
+        
+
+
     return (
         <Container className="kataCardComponent">
             <Row className="topRow">
@@ -11,7 +23,7 @@ export default function KataCardComponent(props: any) {
                 <Col>
                     <h1 className="kataName">{props.kataData.name}</h1>
                     <h1 className="kataAuthor">{props.kataData.authorName}</h1>
-                    <button className="reserveBtn">Reserve Kata</button>
+                    <button style={{ border:  clicked ? '1px solid red' : '' ,  color: clicked ? 'red' : '' }} onClick={handleClick} className="reserveBtn">Reserve Kata</button>
                 </Col>
                 <Col className="iconCol">
                     <div className="iconGroup">
