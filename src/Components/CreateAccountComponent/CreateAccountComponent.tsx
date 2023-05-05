@@ -53,8 +53,9 @@ export default function CreateAccountComponent() {
 
                 <Container>
                   <Form.Group className="formControl" controlId="formBasicEmail" >
+                    <Container>
                     <i className="fa-solid fa-user"></i>
-
+                    </Container>
                     <Form.Control
                       className="createAccountForm"
                       type="text"

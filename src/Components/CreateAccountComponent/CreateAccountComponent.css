@@ -6,25 +6,25 @@
     position: absolute;
     background-color: #222327;
     color: #efefef;
-    margin-left: 27%;
-    margin-top: 1%;
+    margin-left: 90%;
+    margin-top: 30%;
     margin-bottom: 5%;
     width: 700px;
-    height: 738px;
+    height: 755px;
     border-radius: 20px;
 }
 
 .createAccountCardHeaderText{
     font-size: 64px;
-    margin-left: 25%;
+    margin-left: 21%;
 }
 
 .createAccountFormControl{
     position: absolute;
     width: 535px;
-    height: 284px;
+    height: 280px;
     left: 80px;
-    top: 260px;
+    top: 262px;
     background: #222327;
     border: 2px solid #757575;
     border-radius: 20px;
@@ -33,7 +33,9 @@
 .createAccountForm{
     background-color: #222327;
     width: 530px;
-    height: 85px;
+    height: 97px;
+    margin-left: -3%;
+    padding-left: 10%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -42,12 +44,17 @@
     background-color: #222327;
     width: 530px;
     height: 92px;
+    margin-left: -3%;
+    padding-left: 10%;
 }
 
 .createAccountForm3{
     background-color: #222327;
     width: 530px;
     height: 92px;
+    margin-bottom: 10px;
+    margin-left: -3%;
+    padding-left: 10%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -55,7 +62,7 @@
 i{
     position: absolute;
     margin-top: 7%;
-    margin-left: -5%;
+    margin-left: -2%;
 }
 
 .createAccountButton{
@@ -71,22 +78,23 @@ font-weight: 400;
 font-size: 40px;
 line-height: 48px;
 text-align: center;
-margin-left: 10%;
+margin-left: 20%;
+padding-left: 15%;
 color: #FFFFFF;
 }
 
 .createAccountCardSmTxt{
     margin-left: 18%;
-    margin-top: 38%;
+    margin-top: 40%;
 }
 
 .createAccountCardSmTxt2{
-    margin-left: 27%;
+    margin-left: 24%;
     margin-top: 17%;
 }
 
 .createAccountLogo{
-    margin-left: 33%;
+    margin-left: 30%;
     margin-top: 5%;
 }
 
