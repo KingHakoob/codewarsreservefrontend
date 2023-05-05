@@ -49,7 +49,7 @@ function AdminComponent() {
                         <Row >
 
                             <div className='header-title col-2'>
-                                {/* <p className='rectangle kata-rank'>{userData.ranks.overall.name}</p> */}
+                                <p className='rectangle kata-rank'>{userData.ranks.overall.name}</p>
                             </div>
                             <div className='col-4'>
                                 <p className='username'>{userData.username}</p>
@@ -79,11 +79,11 @@ function AdminComponent() {
                             <div className='col-4'>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Total Completed Kata: </p>
-                                    {/* <p className='user-info-input'>{userData.codeChallenges.totalCompleted}</p> */}
+                                    <p className='user-info-input'>{userData.codeChallenges.totalCompleted}</p>
                                 </div>
                                 <div className='user-data gap-2'>
                                     <p className='tag'>Total Authored Kata: </p>
-                                    {/* <p className='user-info-input'>{userData.codeChallenges.totalAuthored}</p> */}
+                                    <p className='user-info-input'>{userData.codeChallenges.totalAuthored}</p>
                                 </div>
                             </div>
                         </Row>
