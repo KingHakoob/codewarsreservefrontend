@@ -62,4 +62,22 @@ async function LoginPost(loginUser: object) {
     return data;
 }
 
-export { GetCodeWarsUserData, GetCodeWarsCompletedKatas, GetCodeWarsAuthoredKatas, GetCodeWarsKata, CreateAccountPost, LoginPost }
+async function AddReservation(addedReservation: object) {
+    const result = await fetch('https://codewarsbackend.azurewebsites.net/Reservation/AddReservation', {
+        method: "POST",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify(addedReservation)
+    });
+    if (!result.ok) {
+        alert('Could Not Add Reservation')
+        const message = `An Error has Occured ${result.status}`;
+        throw new Error(message);
+    }
+    let data = await result.json();
+    console.log(data);
+    return data;
+}
+
+export { GetCodeWarsUserData, GetCodeWarsCompletedKatas, GetCodeWarsAuthoredKatas, GetCodeWarsKata, CreateAccountPost, LoginPost, AddReservation }

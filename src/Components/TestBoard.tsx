@@ -10,13 +10,13 @@ export default function TestBoard() {
     
     const handleSubmit = async () => {
         sessionStorage.setItem('UserData', JSON.stringify(await GetCodeWarsUserData(username)))
-        navigate("/UserHomeComponent");
+        navigate("/TESTINGDisplayKata");
     }
 
     return (
         <div>
             <input type='text' placeholder='Enter Username' onChange={({ target: { value } }) => setUsername(value)} />
-            <button onClick={handleSubmit}>Login</button>
+            <button onClick={handleSubmit}>Search Kata</button>
         </div>
     );
 }
