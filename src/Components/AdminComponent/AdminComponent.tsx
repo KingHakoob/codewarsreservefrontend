@@ -1,4 +1,3 @@
-import React from 'react';
 import logout from '../../Assets/log-out.png';
 import '../AdminComponent/AdminComponent.css';
 import { Container, Row, Card, Col, Form, Navbar, Dropdown, DropdownButton } from 'react-bootstrap';
@@ -6,23 +5,24 @@ import search from '../../Assets/Search.png';
 import logo from '../../Assets/codewarsres-logo.png';
 import copyright from '../../Assets/copyright.png'
 import { useNavigate } from 'react-router-dom';
+import UserCardComponent from '../UserCardComponent/UserCardComponent';
 
 
 function AdminComponent() {
     let Navigate = useNavigate();
     let userData;
     let userTemp = JSON.parse(sessionStorage.UserData);
-    if(userTemp.username == null){
+    if (userTemp.username == null) {
         userData = {
-            ranks: {overall: {name: '1 Kyu'}},
+            ranks: { overall: { name: '1 Kyu' } },
             username: 'BobTheBuilder',
             name: 'Bob',
             honor: '5000',
             clan: 'Builders',
             leaderBoardPosition: '1',
-            codeWarsChallenges: {totalCompleted: 1000, totalAuthored: 50}
+            codeWarsChallenges: { totalCompleted: 1000, totalAuthored: 50 }
         }
-    }else {
+    } else {
         userData = JSON.parse(sessionStorage.UserData);
 
     }
@@ -102,6 +102,7 @@ function AdminComponent() {
                     </Col>
                 </Row>
             </Container>
+            <div className='filterUserDiv'>
             <Container className='filters-container-admin'>
                 <Card className='filters-admin'>
                     <p className='filters-title-admin'> Filters</p>
@@ -118,13 +119,15 @@ function AdminComponent() {
                 </Card>
 
             </Container>
+            <UserCardComponent />
+            </div>
             <Row className='footer-box'>
-            <Container className='nav-container'>
-                <div className='cr-tag'>
-                <img src={copyright}/>
-                <p >2023 CodeStack Academy Day Class</p>
-                </div>
-            </Container>
+                <Container className='nav-container'>
+                    <div className='cr-tag'>
+                        <img src={copyright} />
+                        <p >2023 CodeStack Academy Day Class</p>
+                    </div>
+                </Container>
             </Row>
         </div>
     )

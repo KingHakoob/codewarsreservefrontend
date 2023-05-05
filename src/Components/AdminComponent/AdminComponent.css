@@ -261,6 +261,10 @@ margin-bottom: 0px;
     justify-content: end;
 }
 
+.filterUserDiv{
+    display: flex;
+}
+
 @media screen and (max-width: 991px) {
     .user-header-box {
         background: linear-gradient(180deg, #222327 0%, #16171B 100%);
