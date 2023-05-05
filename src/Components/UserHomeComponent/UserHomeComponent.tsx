@@ -12,7 +12,6 @@ function UserHomeComponent() {
     let userData;
     let userTemp = JSON.parse(sessionStorage.UserData);
 
-    let nameTest = 'testing';
     let KataDummyData = [ 
         {name: "Count to Five", authorName: "Freddy", kataDescription: "Count to Five with one hand!"},
         {name: "Reverse The String", authorName: "BobTheBuilder", kataDescription: "Reverse The Given String"}
@@ -26,7 +25,7 @@ function UserHomeComponent() {
             honor: '5000',
             clan: 'Builders',
             leaderBoardPosition: '1',
-            codeWarsChallenges: { totalCompleted: 1000, totalAuthored: 50 }
+            codeChallenges: { totalCompleted: 1000, totalAuthored: 50 }
         }
     } else {
         userData = JSON.parse(sessionStorage.UserData);
