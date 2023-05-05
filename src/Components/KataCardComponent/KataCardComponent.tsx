@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import './KataCardComponent.css';
 
-export default function KataCardComponent() {
+export default function KataCardComponent(props: any) {
     return (
         <Container className="kataCardComponent">
             <Row className="topRow">
@@ -9,8 +9,8 @@ export default function KataCardComponent() {
                     <h1 className="kataRank">6 Kyu</h1>
                 </Col>
                 <Col>
-                    <h1 className="kataName">Griffin's Marble Bonanza</h1>
-                    <h1 className="kataAuthor">GriffinSwain</h1>
+                    <h1 className="kataName">{props.kataData.name}</h1>
+                    <h1 className="kataAuthor">{props.kataData.authorName}</h1>
                     <button className="reserveBtn">Reserve Kata</button>
                 </Col>
                 <Col className="iconCol">
@@ -53,7 +53,7 @@ export default function KataCardComponent() {
             <Row className="bottomRow">
                 <Col>
                     <h1 className="descriptionTitle">Kata Description</h1>
-                    <h1 className="kataDescription">Griffin has lost his marbles! They are mixed in with his friends marbles, but luckily they are marked with his initials. Help him find out if he has recovered them all!</h1>
+                    <h1 className="kataDescription">{props.kataData.kataDescription}</h1>
                 </Col>
             </Row>
         </Container>

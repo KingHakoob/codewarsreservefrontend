@@ -11,6 +11,10 @@ function UserHomeComponent() {
     let userTemp = JSON.parse(sessionStorage.UserData);
 
     let nameTest = 'testing';
+    let KataDummyData = [ 
+        {name: "Count to Five", authorName: "Freddy", kataDescription: "Count to Five with one hand!"},
+        {name: "Reverse The String", authorName: "BobTheBuilder", kataDescription: "Reverse The Given String"}
+    ];
 
     if (userTemp.username == null) {
         userData = {
@@ -25,7 +29,6 @@ function UserHomeComponent() {
     } else {
         userData = JSON.parse(sessionStorage.UserData);
     }
-    console.log(userData);
     return (
         <div>
             <Navbar className='nav-bg'>
@@ -136,7 +139,8 @@ function UserHomeComponent() {
                         </Container>
                     </Col>
                     <Col>
-                        <KataCardComponent />
+                        <KataCardComponent kataData={KataDummyData[0]} />
+                        <KataCardComponent kataData={KataDummyData[1]} />
                     </Col>
                 </Row>
             </Container>
