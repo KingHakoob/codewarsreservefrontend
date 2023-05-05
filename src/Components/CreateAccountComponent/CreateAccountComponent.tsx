@@ -58,7 +58,7 @@ export default function CreateAccountComponent() {
                     <Form.Control
                       className="createAccountForm"
                       type="text"
-                      placeholder=" CodeWars Login"
+                      placeholder=" CodeWars Username"
                       onChange={({ target: { value } }) => setUsername(value)}
                     />
                   </Form.Group>
